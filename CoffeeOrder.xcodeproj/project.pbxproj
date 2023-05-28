@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		765D2D722A225AAE00820AEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765D2D712A225AAE00820AEB /* AppDelegate.swift */; };
 		765D2D742A225AAE00820AEB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765D2D732A225AAE00820AEB /* SceneDelegate.swift */; };
-		765D2D762A225AAE00820AEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765D2D752A225AAE00820AEB /* ViewController.swift */; };
 		765D2D792A225AAE00820AEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 765D2D772A225AAE00820AEB /* Main.storyboard */; };
 		765D2D7B2A225AB000820AEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 765D2D7A2A225AB000820AEB /* Assets.xcassets */; };
 		765D2D7E2A225AB000820AEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 765D2D7C2A225AB000820AEB /* LaunchScreen.storyboard */; };
 		765D2D892A225AB000820AEB /* CoffeeOrderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765D2D882A225AB000820AEB /* CoffeeOrderTests.swift */; };
 		765D2D932A225AB000820AEB /* CoffeeOrderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765D2D922A225AB000820AEB /* CoffeeOrderUITests.swift */; };
 		765D2D952A225AB000820AEB /* CoffeeOrderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765D2D942A225AB000820AEB /* CoffeeOrderUITestsLaunchTests.swift */; };
+		765D2DA32A236E3100820AEB /* OrdersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765D2DA22A236E3100820AEB /* OrdersTableViewController.swift */; };
+		765D2DA52A236E6900820AEB /* AddOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765D2DA42A236E6900820AEB /* AddOrderViewController.swift */; };
+		765D2DA82A23724100820AEB /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765D2DA72A23724100820AEB /* WebService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,6 @@
 		765D2D6E2A225AAE00820AEB /* CoffeeOrder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeOrder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		765D2D712A225AAE00820AEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		765D2D732A225AAE00820AEB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		765D2D752A225AAE00820AEB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		765D2D782A225AAE00820AEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		765D2D7A2A225AB000820AEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		765D2D7D2A225AB000820AEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,9 @@
 		765D2D8E2A225AB000820AEB /* CoffeeOrderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoffeeOrderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		765D2D922A225AB000820AEB /* CoffeeOrderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeOrderUITests.swift; sourceTree = "<group>"; };
 		765D2D942A225AB000820AEB /* CoffeeOrderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeOrderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		765D2DA22A236E3100820AEB /* OrdersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableViewController.swift; sourceTree = "<group>"; };
+		765D2DA42A236E6900820AEB /* AddOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderViewController.swift; sourceTree = "<group>"; };
+		765D2DA72A23724100820AEB /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,10 @@
 		765D2D702A225AAE00820AEB /* CoffeeOrder */ = {
 			isa = PBXGroup;
 			children = (
+				765D2DA62A23722E00820AEB /* Services */,
+				765D2DA12A236D3500820AEB /* Controllers */,
 				765D2D712A225AAE00820AEB /* AppDelegate.swift */,
 				765D2D732A225AAE00820AEB /* SceneDelegate.swift */,
-				765D2D752A225AAE00820AEB /* ViewController.swift */,
 				765D2D772A225AAE00820AEB /* Main.storyboard */,
 				765D2D7A2A225AB000820AEB /* Assets.xcassets */,
 				765D2D7C2A225AB000820AEB /* LaunchScreen.storyboard */,
@@ -125,6 +130,23 @@
 				765D2D942A225AB000820AEB /* CoffeeOrderUITestsLaunchTests.swift */,
 			);
 			path = CoffeeOrderUITests;
+			sourceTree = "<group>";
+		};
+		765D2DA12A236D3500820AEB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				765D2DA22A236E3100820AEB /* OrdersTableViewController.swift */,
+				765D2DA42A236E6900820AEB /* AddOrderViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		765D2DA62A23722E00820AEB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				765D2DA72A23724100820AEB /* WebService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +280,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				765D2D762A225AAE00820AEB /* ViewController.swift in Sources */,
 				765D2D722A225AAE00820AEB /* AppDelegate.swift in Sources */,
 				765D2D742A225AAE00820AEB /* SceneDelegate.swift in Sources */,
+				765D2DA32A236E3100820AEB /* OrdersTableViewController.swift in Sources */,
+				765D2DA82A23724100820AEB /* WebService.swift in Sources */,
+				765D2DA52A236E6900820AEB /* AddOrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
